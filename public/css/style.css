@@ -1,0 +1,270 @@
+@import url(./responsive.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Navbar */
+/* Navbar */
+header{
+    width: 90%;
+    height: 15%;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header .logo {
+    padding: 10px;
+}
+
+.header nav {
+    width: 50%;
+}
+
+.header nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    text-shadow: 0 0 5px #ffee01;
+}
+
+.header nav ul li a:hover{
+    text-shadow: 0 0 20px #ffee01;
+    border-bottom: 2px solid #f5f;
+}
+
+
+/* Carousel  */
+
+section .carousel{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    z-index: -10;
+    object-fit: fill;
+    background-size: cover;
+    background-image: url(../images/banner_img.png);
+
+}
+
+section .carousel .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .carousel h1{
+    width: min-content;
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    top: 25%;
+    color: antiquewhite;
+}
+
+
+/* about section */
+.about{
+    width: 90%;
+    height: 100vh;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .img{
+    width: 10%;
+}
+
+.about .text{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .text .titlepage{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about .text .titlepage h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.about .text .titlepage p{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.about .text a{
+    text-decoration: none;
+    font-size: 2.6rem;
+    border-radius: 20px;
+    padding: .3rem 2rem;
+    border: 1px solid #f5f;
+}
+
+
+/* glasses */
+
+.glasses {
+    padding: 50px 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.glasses .container{
+    width: 90%;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+.glasses .container h2{
+    font-size: 2.3rem;
+}
+.glasses .container p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.glasses .container-cards{
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    place-items: center;
+}
+
+.glasses .container-cards .glasses_box{
+    border: 1px solid #66ff00ad;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.glasses .container-cards .glasses_box:hover{
+    box-shadow: 0 0 5px rgb(245, 159, 0),
+                0 0 10px #f5f,
+                0 0 50px #ffee01
+}
+
+.glasses .container-cards .glasses_box .text{
+    width: 100%;
+    text-align: center;
+}
+.glasses .container-cards .glasses_box .text :nth-child(2){
+    padding: .5rem;
+    color: red;
+}
+
+/* map */
+.mapouter h1{
+    text-align: center;
+    padding: 10px 0;
+}
+.mapouter .gmap_canvas #gmap_canvas{
+    width: 800px;
+    height: 550px
+}
+
+.mapouter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+ }
+ .gmap_canvas {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+ }
+
+/* footer */
+
+footer{
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #524f4f;
+    color: #fff;
+    height: auto;
+    padding: 2%;
+}
+
+footer .container{
+    width: 100%;
+    height: 100%;
+}
+
+footer .container .icons ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+footer .container .icons ul li{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+footer .container .icons ul li i{
+    padding: 10px 0;
+}
+footer .container .copyright{
+    border: 1px solid #f50;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

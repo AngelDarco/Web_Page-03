@@ -1,0 +1,72 @@
+@media (max-width: 450px) {
+    body,
+    header,
+    section,
+    .about,
+    .glasses {
+        width: 100%;
+    }
+
+    /* navbar */
+    .header nav {
+        display: none;
+    }
+    
+    /* Carousel  */
+    body section .carousel{
+        object-fit: contain;
+        width: 100% !important;
+        z-index: 0;
+        padding-bottom: 50px;
+    }
+
+    /* about */
+    body .about {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    body .about .img {
+        width: 100%;
+    }
+    body .about .img img {
+        width: 80%;
+    }
+    body .about .text {
+        width: 100%;
+    }
+    body .about .text a{
+        display: none;
+    }
+    /* cards */
+    body .glasses{
+        width: 100%;
+    }
+    body .glasses .container-cards {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    body .glasses .container-cards .glasses_box {
+        width: 80%;
+    }
+
+    /* map */
+body .mapouter .gmap_canvas #gmap_canvas{
+    width: 100%;
+}
+
+body .mapouter {
+    width: 100%;
+ }
+ body .gmap_canvas {
+    width: 100%;
+ }
+
+    /* footer */
+    footer .container .icons ul {
+        flex-direction: column;
+    }
+    body footer .container .icons ul li i {
+        padding: 10px 0 5px;
+    }
+}
